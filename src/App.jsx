@@ -5,11 +5,14 @@ import Home from './newpages/Home';
 import Signup from './newpages/Signup';
 import Sout from './newpages/Sout';
 import Profile from './newpages/Profile';
-
+import Header from '../components/Header';
+import { ChakraProvider } from '@chakra-ui/react'
 
 export default function App() {
   return (
+   
     <BrowserRouter>
+    <Header />
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/profile" element={<Profile />}/>
@@ -18,5 +21,6 @@ export default function App() {
 
     </Routes>
     </BrowserRouter>
+   
   )
 }
