@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
   return (
-    <header className='bg-[#3f3f3f] shadow-md'>
+    <header className='bg-[#121212] shadow-xl'>
     <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
       <Link to='/'>
         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
@@ -23,7 +23,7 @@ export default function Header() {
         <input
           type='text'
           placeholder='Search...'
-          className='h-6  bg-[#282828] focus:outline-none w-24 sm:w-64 text-white'
+          className='h-6  bg-[#282828] focus:outline-none w-48 sm:w-64 text-white'
           
         />
         <button>
@@ -41,7 +41,7 @@ export default function Header() {
             About
           </li>
         </Link>
-        <Link to='/profile'>
+        <Link to='/signup'>
           
             <li className=' text-[#FFFFFF] hover:underline'> Sign in</li>
           
