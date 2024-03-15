@@ -6,6 +6,7 @@ import Signup from './newpages/Signup';
 import Sout from './newpages/Sout';
 import Profile from './newpages/Profile';
 import Header from '../components/Header';
+import Signin from './newpages/Signin';
 import { ChakraProvider } from '@chakra-ui/react'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/profile" element={<Profile />}/>
+      <Route path='/sign-in' element={<Signin />} />
       <Route path="/signup" element={<Signup />}/>
       <Route path="/signout" element={<Sout />}/>
 
